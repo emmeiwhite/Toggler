@@ -1,0 +1,43 @@
+/* Let's style and create the layout of the using Flexbox */
+
+/* CSS RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Styling The Body | Thinking in terms flexbox layouts */
+
+body{
+    display: flex;
+}
+
+#sidebar-left,#icon-wrapper,#main-body{
+    min-height:100vh;
+}
+
+#sidebar-left{
+    width: 280px;
+    background: #111;
+    color:#fff;
+    transition-duration: 0.5s;
+}
+
+#sidebar-left.hide{
+    margin-left: -280px;
+}
+
+#icon-wrapper{
+    background: #666;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#icon-wrapper #icon-toggler{
+    display: block;
+    color:goldenrod;
+    font-size: 40px;
+    cursor: pointer;
+}
